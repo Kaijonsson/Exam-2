@@ -1,0 +1,47 @@
+
+@media only screen and (max-width: 768px) {
+	body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+	}
+
+	.main-container {
+		display: grid;
+		max-width: 90%;
+		margin: 20px auto;
+		padding: 10px;
+		min-height: 600px;
+		border: 1px solid black;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 10px 10px;
+
+	}
+	
+	.box-header,
+	.box-1,
+	.box-2,
+	.box-3,
+	.box-content,
+	.sidebar,
+	.subfooter1,
+	.subfooter2,
+	.subfooter3,
+	.subfooter4 {
+		grid-row: span 3;
+		gap: 10px 10px;
+		border: 1px solid black;
+		grid-column: 1 / span 12;
+	}
+	
+	.box-footer {
+		grid-column: 1 / span 12;
+		grid-row: span 12;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		border: 1px solid black;
+		gap: 10px 10px;
+		padding-top: 10px;
+	}
+	
+
+}

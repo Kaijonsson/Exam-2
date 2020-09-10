@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;	
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+	}
+}
+
+
+/*---------- for screens larger than 1200px------------*/
+
+.main-container {
+	display: grid;
+	max-width: 90%;
+	margin: 20px auto;
+	min-height: 600px;
+	padding: 10px;
+	border: 1px solid black;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+	"header header header header"
+	"box-1 box-2 box-2 box-3"
+	"content content content sidebar"
+	"footer footer footer footer"
+	;
+	gap: 10px 10px;
+}
+
+
+/*-----------------------------grid areas----------*/
+.box-header {
+	grid-area: header;
+	border: 1px solid black;
+}
+
+.box-1 {
+	grid-area: box-1;
+	border: 1px solid black;
+}
+
+.box-2 {
+	grid-area: box-2;
+	border: 1px solid black;
+}
+
+.box-3 {
+	grid-area: box-3;
+	border: 1px solid black;
+}
+
+.box-content {
+	grid-area: content;
+	border: 1px solid black;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	border: 1px solid black;
+}
+
+.box-footer {
+	grid-area: footer;
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px 10px;
+	padding: 10px;
+}
+/*-----------------------------------end of grid areas----*/
+
+.subfooter1,
+.subfooter2,
+.subfooter3,
+.subfooter4 {
+	border: 1px solid black;
+	grid-row: span 3;
+}
+
+
+
+
