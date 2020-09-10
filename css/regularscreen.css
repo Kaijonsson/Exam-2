@@ -14,13 +14,10 @@
 		display: grid;
 		max-width: 89%;
 		margin: 0 auto;
-		padding: 10px;
 		min-height: 600px;
-		border: 1px solid black;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(7, minmax(100px auto));
-		gap: 10px 10px;
-	}
+		gap: 2%;	}
 
 	.box-header,
 	.box-1,
@@ -30,7 +27,7 @@
 	.sidebar,
 	.box-footer {
 		grid-row: span 3;
-		gap: 10px 10px;
+		gap: 2%;
 		border: 1px solid black;
 	}
 	.box-header {
@@ -62,8 +59,8 @@
 		display: grid;
 		border: 1px solid black;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 10px 10px;
-		padding: 10px;
+		gap: 2%;
+		padding: 2%;
 	}
 
 	.subfooter1,

@@ -15,10 +15,9 @@
 		max-width: 89%;
 		margin: 0 auto;
 		min-height: 600px;
-		border: 1px solid black;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(7, minmax(100px auto));
-		gap: 10px 10px;
+		gap: 2%;
 	}
 	
 	.box-header,
@@ -28,7 +27,7 @@
 	.box-content,
 	.sidebar {
 		grid-row: span 3;
-		gap: 10px 10px;
+		gap: 2%;
 		border: 1px solid black;
 	}
 	.box-header {
@@ -61,7 +60,7 @@
 		display: grid;
 		border: 1px solid black;
 		grid-template-columns: repeat(2, 1fr);
-		padding: 10px;
+		padding: 2%;
 	}
 	
 	.subfooter1,
