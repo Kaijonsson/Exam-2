@@ -1,5 +1,9 @@
 /* --------------for screens 768px-960px ----------------->*/
 
+* {
+	box-sizing: border-box;	
+}
+
 @media only screen and (max-width: 960px) {
 	body {
 	background: url(../img/12_col.gif) center top repeat-y;
@@ -8,14 +12,13 @@
 
 	.main-container {
 		display: grid;
-		max-width: 90%;
-		margin: 20px auto;
+		max-width: 89%;
+		margin: 0 auto;
 		min-height: 600px;
 		border: 1px solid black;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(15, 1fr);
+		grid-template-rows: repeat(7, minmax(100px auto));
 		gap: 10px 10px;
-
 	}
 	
 	.box-header,
